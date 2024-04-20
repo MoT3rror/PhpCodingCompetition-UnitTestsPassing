@@ -1,0 +1,10 @@
+.idea/
+.DS_store
+
+.phpunit.cache/
+vendor/
+
+src/Architecture/
+src/Db/
+src/Secrets/
+src/User/

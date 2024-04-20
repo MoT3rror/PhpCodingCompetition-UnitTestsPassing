@@ -1,0 +1,23 @@
+{
+    "name": "markniebergall/php-code-competition-code-coverage",
+    "require-dev": {
+        "phpunit/phpunit": "^11.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "PhpCodeCompetition\\Tdd\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PhpCodeCompetition\\Tdd\\Tests\\": "tests/src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mark Niebergall",
+            "email": "mbniebergall@gmail.com"
+        }
+    ],
+    "require": {}
+}
