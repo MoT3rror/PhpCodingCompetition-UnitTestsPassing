@@ -5,12 +5,12 @@
     },
     "autoload": {
         "psr-4": {
-            "PhpCodeCompetition\\Tdd\\": "src/"
+            "PhpCodingCompetition\\Tdd\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "PhpCodeCompetition\\Tdd\\Tests\\": "tests/src/"
+            "PhpCodingCompetition\\Tdd\\Tests\\": "tests/src/"
         }
     },
     "authors": [

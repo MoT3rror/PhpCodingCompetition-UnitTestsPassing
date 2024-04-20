@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace PhpCodeCompetition\Tdd\Tests\Secrets\Password;
+namespace PhpCodingCompetition\Tdd\Tests\Secrets\Password;
 
 use InvalidArgumentException;
-use PhpCodeCompetition\Tdd\Secrets\Password\PasswordService;
+use PhpCodingCompetition\Tdd\Secrets\Password\PasswordService;
 use PHPUnit\Framework\TestCase;
 
 class PasswordServiceTest extends TestCase

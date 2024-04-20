@@ -9,3 +9,17 @@
 - No skipping tests
 - First one to show me tests all passing wins the Challenge!
   - Bring your laptop to me to show me, or call me over to you
+- Output should look something like this:
+```
+vendor/bin/phpunit --configuration phpunit.xml
+PHPUnit 11.1.2 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 8.3.4
+Configuration: /Users/markniebergall/PhpstormProjects/PhpCodingCompetition-UnitTestsPassing/phpunit.xml
+
+........................                                          24 / 24 (100%)
+
+Time: 00:00.164, Memory: 8.00 MB
+
+OK (24 tests, 70 assertions)
+```

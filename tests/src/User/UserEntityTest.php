@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace PhpCodeCompetition\Tdd\Tests\User;
+namespace PhpCodingCompetition\Tdd\Tests\User;
 
 use DateTimeImmutable;
 use InvalidArgumentException;
-use PhpCodeCompetition\Tdd\Architecture\Entity\EntityInterface;
-use PhpCodeCompetition\Tdd\User\UserEntity;
+use PhpCodingCompetition\Tdd\Architecture\Entity\EntityInterface;
+use PhpCodingCompetition\Tdd\User\UserEntity;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace PhpCodeCompetition\Tdd\Tests\User;
+namespace PhpCodingCompetition\Tdd\Tests\User;
 
-use PhpCodeCompetition\Tdd\Db\Repository\RepositoryEntityAbstract;
-use PhpCodeCompetition\Tdd\User\UserRepository;
+use PhpCodingCompetition\Tdd\Db\Repository\RepositoryEntityAbstract;
+use PhpCodingCompetition\Tdd\User\UserRepository;
 use PHPUnit\Framework\TestCase;
 
 class UserRepositoryTest extends TestCase

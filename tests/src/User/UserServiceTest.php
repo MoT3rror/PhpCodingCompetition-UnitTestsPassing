@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace PhpCodeCompetition\Tdd\Tests\User;
+namespace PhpCodingCompetition\Tdd\Tests\User;
 
 use DateTimeImmutable;
-use PhpCodeCompetition\Tdd\Secrets\Password\PasswordService;
-use PhpCodeCompetition\Tdd\User\UserEntity;
-use PhpCodeCompetition\Tdd\User\UserRepository;
-use PhpCodeCompetition\Tdd\User\UserService;
+use PhpCodingCompetition\Tdd\Secrets\Password\PasswordService;
+use PhpCodingCompetition\Tdd\User\UserEntity;
+use PhpCodingCompetition\Tdd\User\UserRepository;
+use PhpCodingCompetition\Tdd\User\UserService;
 use PHPUnit\Framework\TestCase;
 
 class UserServiceTest extends TestCase

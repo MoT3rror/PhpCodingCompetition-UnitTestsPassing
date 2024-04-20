@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace PhpCodeCompetition\Tdd\Tests\Architecture\Entity;
+namespace PhpCodingCompetition\Tdd\Tests\Architecture\Entity;
 
-use PhpCodeCompetition\Tdd\Architecture\Entity\EntityInterface;
-use PhpCodeCompetition\Tdd\Architecture\Entity\HydratorInterface;
+use PhpCodingCompetition\Tdd\Architecture\Entity\EntityInterface;
+use PhpCodingCompetition\Tdd\Architecture\Entity\HydratorInterface;
 use PHPUnit\Framework\TestCase;
 
 class HydratorInterfaceTest extends TestCase
