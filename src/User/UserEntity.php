@@ -47,13 +47,14 @@ class UserEntity implements EntityInterface
         return $this->userId;
     }
 
-    public function setUserId(?int $userId): void
+    public function setUserId(?int $userId): self
     {
         if ($userId && $userId <= 0) {
             throw new InvalidArgumentException('UserId must be a positive integer', 422);
         }
         
         $this->userId = $userId;
+        return $this;
     }
 
     public function getUsername(): ?string
@@ -61,13 +62,14 @@ class UserEntity implements EntityInterface
         return $this->username;
     }
 
-    public function setUsername(?string $username): void
+    public function setUsername(?string $username): self
     {
         if ($username && strlen($username) > 120) {
             throw new InvalidArgumentException('Username must be at most 120 characters long', 422);
         }
         
         $this->username = $username;
+        return $this;
     }
 
     public function getPassword(): ?string
@@ -75,13 +77,14 @@ class UserEntity implements EntityInterface
         return $this->password;
     }
 
-    public function setPassword(?string $passwordHash): void
+    public function setPassword(?string $passwordHash): self
     {
         if ($passwordHash && strlen($passwordHash) > 256) {
             throw new InvalidArgumentException('Password hash is too long', 422);
         }
         
         $this->password = $passwordHash;
+        return $this;
     }
 
     public function getIsActive(): bool
@@ -89,9 +92,10 @@ class UserEntity implements EntityInterface
         return $this->isActive;
     }
 
-    public function setIsActive(bool $isActive): void
+    public function setIsActive(bool $isActive): self
     {
         $this->isActive = $isActive;
+        return $this;
     }
 
     public function getEmail(): ?string
@@ -99,13 +103,14 @@ class UserEntity implements EntityInterface
         return $this->email;
     }
 
-    public function setEmail(?string $email): void
+    public function setEmail(?string $email): self
     {
         if ($email && !filter_var($email, FILTER_VALIDATE_EMAIL)) {
             throw new InvalidArgumentException('Email is not valid', 422);
         }
         
         $this->email = $email;
+        return $this;
     }
 
     public function getUserCreatedDatetime(): ?DateTimeInterface
@@ -113,12 +118,13 @@ class UserEntity implements EntityInterface
         return $this->userCreatedDatetime;
     }
 
-    public function setUserCreatedDatetime(?DateTimeInterface $date): void
+    public function setUserCreatedDatetime(?DateTimeInterface $date): self
     {
         if ($date && $date->getTimestamp() > strtotime('now')) {
             throw new InvalidArgumentException('User Created Datetime must not be in the future', 422);
         }
         
         $this->userCreatedDatetime = $date;
+        return $this;
     }
 }
