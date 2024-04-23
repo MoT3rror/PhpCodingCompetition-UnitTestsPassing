@@ -20,10 +20,7 @@ class PasswordService
     {
         return password_hash($password, self::ALGO);
     }
-
-    /*
-     * @throws InvalidArgumentException
-     */
+    
     public function passwordChecks(string $password): bool
     {
         if (strlen($password) < self::MAX_LENGTH) {
